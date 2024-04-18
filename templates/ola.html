@@ -5,13 +5,10 @@
     <title>Blog Ocean</title>
 </head>
 <body>
-    <i><h1>
-        <ul>
-            <li> Marcio </li>
-            <li> Heitor </li>
-            <li> Silvia </li>
-            <li> Helena </li>
-        </ul>
-        </h1>
+    {% for post in post %}
+    <h1>{{ post.titulo }}</h1>
+    <h2>{{ post.texto }}</h2>
+    <h3>{{ post.data_criacao }}</h3>
+    {% endfor %}
 </body>
 </html>
